@@ -3,10 +3,26 @@
 // Keep it simple! Remember a closure is just a function
 // that manipulates variables defined in the outer scope.
 // The outer scope can be a parent function, or the top level of the script.
-
+function guard(guardName) {
+  const show1 = "Scary";
+  const show2 = "Sad";
+  console.log(
+    `${guardName} is the best Winter Guard in Michigan. It's latest shows are ${show1} and ${show2}. `
+  );
+  debugger;
+  function solo(soloName) {
+    const equipment = "Rifle";
+    debugger;
+    function favoriteEqupment(equipmentName) {
+      debugger;
+    } //this closes favorite equipment
+    favoriteEquipment("Flag");
+  } // this closes solo
+  solo("Emma");
+} // this closes guard
+guard("Odin");
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
-
 
 // ==== Challenge 2: Implement a "counter maker" function ====
 const counterMaker = () => {
